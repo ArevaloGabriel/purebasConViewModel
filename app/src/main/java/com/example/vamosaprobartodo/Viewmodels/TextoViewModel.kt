@@ -23,13 +23,13 @@ class TextoViewModel : ViewModel() {
     suspend fun retardo() {
        delay(1000L)
     }
-    fun mayuscula(): String? {
+    fun mayuscula(): String {
 
-        return "$textoData".uppercase().also { this.textoData.value = it }
+        return textoData.postValue(textoData.value.toString().uppercase()).toString()
+        }
 
-    }
     fun minuscula():String{
-        return textoData.value.toString().lowercase()
+        return textoData.postValue(textoData.value.toString().lowercase()).toString()
     }
 
 

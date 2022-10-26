@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        binding.mayusculaButon.setOnClickListener {
+       binding.mayusculaButon.setOnClickListener {
 
             binding.resultado.text = texto.mayuscula()
         }

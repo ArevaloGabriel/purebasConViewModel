@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pantalla"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys_view_.MainActivity">
+
+    <Button
+        android:id="@+id/mayusculaButon"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/mayuscula"
+        app:backgroundTint="#777272"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favoritos" />
+
+    <Button
+        android:id="@+id/MinusculaButton"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/minuscula"
+        app:backgroundTint="#777272"
+        app:layout_constraintEnd_toStartOf="@+id/mayusculaButon"
+        app:layout_constraintTop_toBottomOf="@+id/cambiarTexto" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="370dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTextoCambiado" />
+
+    <Button
+        android:id="@+id/cambiarTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cambiar Texto"
+        app:backgroundTint="#777272"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textTextoCambiado"
+        android:layout_width="224dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="48dp"
+        android:text="Frase :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/favoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Agregar Favorito"
+        app:backgroundTint="#777272"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/cambiarTexto"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <Button
+        android:id="@+id/mostrarFavoritos"
+        android:layout_width="240dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="76dp"
+        android:text="Mostrar Los Favoritos"
+        app:backgroundTint="#777272"
+        app:layout_constraintTop_toBottomOf="@+id/mayusculaButon"
+        tools:layout_editor_absoluteX="77dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
